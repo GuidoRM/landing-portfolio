@@ -1,5 +1,75 @@
 .hero {
     position: relative;
+    height: 100vh;
+    max-height: 800px;
+    max-width: 100%;
+
+    @include responsive($md) {
+        max-width: 90%;
+    }
+
+    &__cols {
+        @include responsive($md) {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+
+            &-left {
+                display: flex;
+                align-items: flex-start;
+
+                div {
+                    display: flex;
+                    max-width: 550px;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                }
+            }
+
+            &-right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: fit-content;
+
+                p {
+                    
+                    max-width: 205px;
+                    margin-bottom: 130px;
+                    margin-top: 90px;
+                }
+
+                &-badge {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+
+
+
+                    h3 {
+                        color: #000;
+                        text-align: center;
+                        font-family: Ubuntu;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 38px;
+                        /* 146.154% */
+                        text-transform: uppercase;
+                    }
+                }
+
+            }
+        }
+
+
+    }
 
     &__title {
         color: #000;
@@ -8,25 +78,85 @@
         font-style: normal;
         font-weight: 500;
         line-height: 50px;
+
+
+        @include responsive($md) {
+            color: #000;
+            font-family: Ubuntu;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 75px;
+        }
+    }
+
+    &__email {
+        @include responsive($md) {
+            color: #FF7736;
+            font-family: Ubuntu;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 38px;
+            /* 146.154% */
+            text-decoration-line: underline;
+            text-transform: lowercase;
+            margin-bottom: 155px;
+        }
+    }
+
+    &__experiencies {
+        @include responsive($md) {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #000;
+            font-family: Ubuntu;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+
+            strong {
+                color: #000;
+                font-family: Ubuntu;
+                font-size: 70px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: -9.8px;
+            }
+        }
     }
 
     &__subtitle {
-            color: #25383F;
-            font-family: Ubuntu;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 32px;
-        
+        color: #25383F;
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+
     }
 
     &__images {
-        background: url(/assets/home/fuego2.png), linear-gradient(180deg, #F8F7F2 0%, rgba(248, 247, 241, 0.00) 100%);
+        background-image: url(/assets/home/fuego2.png);
         background-repeat: no-repeat;
         background-position: bottom center;
-        background-size: contain;
         padding-top: 3rem;
         position: relative;
+        height: max-content;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        @include responsive($md) {
+            background-image: url(/assets/home/fuego.png);
+            height: 100%;
+        }
+
 
         &-badge {
             position: absolute;
@@ -39,55 +169,12 @@
         &-photo {
             width: 300px;
             height: 430px;
+
+            @include responsive($md) {
+                width: 430px;
+                height: 612px;
+            }
+
         }
-    }
-}
-
-.hero1 {
-    position: relative;
-    background: url(/assets/home/bg-yellow-sm.svg), linear-gradient(180deg, #F8F7F2 0%, rgba(248, 247, 241, 0.00) 100%);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    z-index: -2;
-    height: 730px;
-    overflow: hidden;
-
-    &__badge {
-        position: absolute;
-        width: 97px;
-        height: 97px;
-        right: 30px;
-        top: 0;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    &__title {
-        color: #000;
-        font-family: $font-primary;
-        font-size: 45px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 50px;
-        /* 111.111% */
-        margin-top: 54px;
-        margin-bottom: 17px;
-    }
-
-    &__experiencies {
-        display: none;
-    }
-
-    &__subtitle {
-        color: #25383F;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 32px;
-        /* 200% */
-        margin-bottom: 71px;
     }
 }

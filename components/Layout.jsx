@@ -3,19 +3,19 @@ import React from 'react'
 import Nav from './Nav'
 import Footer from './Footer'
 
-const Layout = ({title, description, children}) => {
+const Layout = ({ title, description, children }) => {
   return (
     <>
-        <Head>
-            <title>{title}</title>
-            <meta name="description" content={description} />
-        </Head>
-        
-        <Nav/>
-        
-        {children}
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Head>
 
-        <Footer/>
+      <Nav />
+
+      {children}
+
+      <Footer />
     </>
   )
 }
