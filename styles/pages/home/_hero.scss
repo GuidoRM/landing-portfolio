@@ -1,5 +1,50 @@
 .hero {
     position: relative;
+
+    &__title {
+        color: #000;
+        font-family: Ubuntu;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+    }
+
+    &__subtitle {
+            color: #25383F;
+            font-family: Ubuntu;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+        
+    }
+
+    &__images {
+        background: url(/assets/home/fuego2.png), linear-gradient(180deg, #F8F7F2 0%, rgba(248, 247, 241, 0.00) 100%);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        padding-top: 3rem;
+        position: relative;
+
+        &-badge {
+            position: absolute;
+            right: 40px;
+            top: 30px;
+            width: 97px;
+            height: 97px;
+        }
+
+        &-photo {
+            width: 300px;
+            height: 430px;
+        }
+    }
+}
+
+.hero1 {
+    position: relative;
     background: url(/assets/home/bg-yellow-sm.svg), linear-gradient(180deg, #F8F7F2 0%, rgba(248, 247, 241, 0.00) 100%);
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -26,7 +71,8 @@
         font-size: 45px;
         font-style: normal;
         font-weight: 500;
-        line-height: 50px; /* 111.111% */
+        line-height: 50px;
+        /* 111.111% */
         margin-top: 54px;
         margin-bottom: 17px;
     }
@@ -40,7 +86,8 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 32px; /* 200% */
+        line-height: 32px;
+        /* 200% */
         margin-bottom: 71px;
     }
 }
