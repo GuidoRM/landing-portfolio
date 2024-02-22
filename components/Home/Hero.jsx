@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <section className='container-fluid hero'>
 
-      <div className='row hero__cols'>
+      <div className='hero__cols'>
 
-        <section className='col-lg-6 row hero__cols-left'>
+        <section className='col-lg-6 hero__cols-left'>
 
           <div>
             <h1 className='hero__title'>
@@ -36,7 +36,7 @@ const Hero = () => {
 
         </section>
 
-        <section className='col-lg-6 hero__badge row hero__cols-right d-none d-md-flex'>
+        <section className='col-lg-6 hero__badge hero__cols-right d-none d-md-flex'>
 
             <p>I design beautifully simple things, And I love what i do</p>
 

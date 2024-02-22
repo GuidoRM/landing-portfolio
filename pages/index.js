@@ -1,3 +1,4 @@
+import Experiences from "@/components/Home/Experiences";
 import Hero from "@/components/Home/Hero";
 import Layout from "@/components/Layout";
 import { Inter } from "next/font/google";
@@ -9,7 +10,8 @@ export default function Home() {
     <>
       <Layout title={"Home"} description={"Página de inicio"}>
         <main>
-          <Hero/>
+          <Hero />
+          <Experiences />
         </main>
       </Layout>
     </> 

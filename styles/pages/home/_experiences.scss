@@ -1,0 +1,109 @@
+.experiencies {
+    // background-color: aquamarine;
+    max-width: 90%;
+    margin: auto;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 89px;
+    gap: 60px;
+
+    &__title {
+        color: #000;
+        font-family: Ubuntu;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__position {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        padding-bottom: 50px;
+
+        &-point {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            min-width: 76px;
+            min-height: 76px;
+            border: 2px dashed black;
+            border-radius: 100%;
+            position: relative;
+            background-color: white;
+
+            &-center {
+                display: block;
+                width: 35px;
+                height: 35px;
+                background-color: rgb(177, 75, 75);
+                border-radius: 100%;
+            }
+
+            &-line {
+                height: 100vh;
+                width: 0px;
+                position: absolute;
+                top: 100%;
+                border-left: 2px dashed black;
+                background-color: white;
+            }
+        }
+
+
+    }
+
+
+    &__role {
+        &-title {
+            color: #000;
+            font-family: Ubuntu;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &-date {
+            color: #000;
+            font-family: Ubuntu;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    &__job {
+        padding-left: 60px;
+
+        &-title {
+            color: #000;
+            font-family: Ubuntu;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &-description {
+            color: #000;
+            font-family: Ubuntu;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+}
