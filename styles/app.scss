@@ -3,12 +3,11 @@
 @import './abstract/base';
 @import './abstract/mixins';
 
-//components
-
 // Utilities
 @import './abstract/utilities';
 
-
+//components
+@import './components/nav';
 
 // Pages
 @import './pages/home/hero';

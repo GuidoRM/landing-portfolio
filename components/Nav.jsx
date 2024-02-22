@@ -2,7 +2,9 @@ import React from 'react';
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <header className='nav'>
+      <h2>dsadas</h2>
+    </header>
   )
 }
 
