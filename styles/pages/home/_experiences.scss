@@ -1,22 +1,38 @@
+/**
+@include responsive($md) {
+            
+        }
+*/
 .experiencies {
     // background-color: aquamarine;
-    max-width: 90%;
+    width: 100%;
     margin: auto;
     overflow: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 89px;
-    gap: 60px;
+    gap: 20px;
+    padding: 49px 0px;
+
+    @include responsive($md) {
+        gap: 60px;  
+    }
 
     &__title {
+
         color: #000;
         font-family: Ubuntu;
-        font-size: 70px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        text-align: center;
+        text-wrap: wrap;
+        
+        @include responsive($md) {
+            font-size: 70px;
+        }
     }
 
     &__position {
@@ -29,38 +45,47 @@
         height: 100%;
         overflow: hidden;
         padding-bottom: 50px;
+        max-width: 90%;
+        margin: auto;
+    }
 
-        &-point {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    &__point {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 36px;
+        min-height: 36px;
+        border: 2px dashed black;
+        border-radius: 100%;
+        position: relative;
+        background-color: white;
 
+        @include responsive($md) {
             min-width: 76px;
             min-height: 76px;
-            border: 2px dashed black;
-            border-radius: 100%;
-            position: relative;
-            background-color: white;
+        }
 
-            &-center {
-                display: block;
+        &-center {
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: rgb(177, 75, 75);
+            border-radius: 100%;
+
+            @include responsive($md) {
                 width: 35px;
                 height: 35px;
-                background-color: rgb(177, 75, 75);
-                border-radius: 100%;
-            }
-
-            &-line {
-                height: 100vh;
-                width: 0px;
-                position: absolute;
-                top: 100%;
-                border-left: 2px dashed black;
-                background-color: white;
             }
         }
 
-
+        &-line {
+            height: 100vh;
+            width: 0px;
+            position: absolute;
+            top: 100%;
+            border-left: 2px dashed black;
+            background-color: white;
+        }
     }
 
 
@@ -85,24 +110,37 @@
     }
 
     &__job {
-        padding-left: 60px;
+        margin-left: 10px;
+
+        @include responsive($md) {
+            margin-left: 60px;
+        }
 
         &-title {
             color: #000;
             font-family: Ubuntu;
-            font-size: 30px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+
+            @include responsive($md) {
+                font-size: 30px;
+
+            }
         }
 
         &-description {
             color: #000;
             font-family: Ubuntu;
-            font-size: 20px;
+            font-size: 12px;
             font-style: normal;
             font-weight: 300;
             line-height: normal;
+
+            @include responsive($md) {
+                font-size: 20px;
+            }
         }
     }
 
