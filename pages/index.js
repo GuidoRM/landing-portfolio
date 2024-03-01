@@ -1,5 +1,6 @@
 import Experiences from "@/components/Home/Experiences";
 import Hero from "@/components/Home/Hero";
+import Projects from "@/components/Home/Projects";
 import Layout from "@/components/Layout";
 import { Inter } from "next/font/google";
 
@@ -12,6 +13,7 @@ export default function Home() {
         <main>
           <Hero />
           <Experiences />
+          <Projects />
         </main>
       </Layout>
     </> 
