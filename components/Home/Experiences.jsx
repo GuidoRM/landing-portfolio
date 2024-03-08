@@ -33,7 +33,7 @@ const Experiences = () => {
             <main className='experiencies container-fluid'>
                 <h2 className='experiencies__title'>My Work Experiences</h2>
 
-                <section>
+                <section className='experiencies__wrapper'>
 
                     {
                         workExperience.map(experience => (

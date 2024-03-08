@@ -1,3 +1,4 @@
+import Comments from "@/components/Home/Comments";
 import Experiences from "@/components/Home/Experiences";
 import Hero from "@/components/Home/Hero";
 import Projects from "@/components/Home/Projects";
@@ -14,6 +15,7 @@ export default function Home() {
           <Hero />
           <Experiences />
           <Projects />
+          <Comments />
         </main>
       </Layout>
     </> 

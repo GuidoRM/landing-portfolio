@@ -1,0 +1,163 @@
+.comments {
+    width: 100%;
+    padding: 85px 0;
+    background: #F8F7F1;
+
+    &__title {
+        color: #000;
+        font-family: Ubuntu;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+
+        @include responsive($md) {
+            font-size: 60px;
+        }
+
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        color: #000;
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 46px;
+        text-wrap: pretty;
+        margin: auto;
+        max-width: 743px;
+        margin-bottom: 46px;
+
+        @include responsive($md) {
+            font-size: 20px;
+        }
+    }
+
+    .swiper {
+        max-width: $max-width;
+        margin: auto;
+    }
+    .swiper-slide {
+        padding: 4rem 0 8rem 0;
+    }
+
+    .swiper-slide-active {
+        .comments__slide {
+            transition: all ease-in-out 0.8s;
+
+            @include responsive($md) {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    &__slide {
+        width: 327px;
+        height: 219px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 30px;
+        background: #FFF;
+        box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.12);
+        margin: auto;
+        margin-top: 5rem;
+        padding: 42px;
+
+        @include responsive($md) {
+            width: 558px;
+            height: 251px;
+        }
+
+        &>* {
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            display: block;
+            width: 64px;
+            height: 64px;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            transform: translateY(-50%);
+
+            @include responsive($md) {
+                width: 110px;
+                height: 110px;
+            }
+        }
+
+        p {
+            color: #000;
+            text-align: center;
+            font-family: Ubuntu;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            text-wrap: pretty;
+
+
+            margin-top: 30px;
+            margin-bottom: 10px;
+
+            @include responsive($md) {
+                font-size: 12.759px;
+                line-height: 29.346px;
+
+                margin-top: 50px;
+                margin-bottom: 15px;
+            }
+        }
+
+        hr {
+
+            width: 272.002px;
+            height: 1.172px;
+            background: #F2F2F2;
+
+            @include responsive($md) {
+
+                width: 474.053px;
+                height: 2px;
+            }
+        }
+
+        h3 {
+            color: #000;
+            font-family: Ubuntu;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            @include responsive($md) {
+                font-size: 18px;
+                margin: 6px;
+            }
+        }
+
+        h4 {
+            color: #000;
+            text-align: center;
+            font-family: Ubuntu;
+            font-size: 7.477px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @include responsive($md) {
+                font-size: 12.759px;
+                line-height: 29.346px;
+            }
+        }
+    }
+}
