@@ -1,6 +1,98 @@
-.nav {
-    background-color: aquamarine;
-    max-width: 90%;
+.navbar {
+    background-color: #ffffff;
     margin: auto;
     padding: 0;
+    height: 70px;
+
+    .navbarWrapper {
+        max-width: $max-width;
+        width: 90%;
+    }
+
+    &__menu {
+        border-radius: 100%;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        color: #000;
+        font-family: "Source Code Pro";
+        font-size: 16.8px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @include responsive($md) {
+            font-size: 25px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 63px;
+        margin: auto 0;
+
+
+        &-option {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto 0;
+            border-radius: 1rem;
+            padding: 0 0.5rem;
+            border: 3px solid rgb(255, 255, 255);
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                border-left: 3px solid black;
+                border-right: 3px solid black;
+            }
+
+            a {
+                color: #000;
+                font-family: "Source Code Pro";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-decoration: none;
+            }
+        }
+
+        &-whatsapp {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+
+            color: #000;
+            font-family: "Source Code Pro";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+    }
+
+    .WhatsappSVG {
+        background-color: #008069;
+        width: 50px;
+        height: 50px;
+        padding: 0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+    }
+
+
+
 }
